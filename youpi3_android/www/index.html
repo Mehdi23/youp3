@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>My App</title>  
+  
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">  
+  <link rel="stylesheet" href="styles/app.css"/>
+
+  <script src="lib/onsen/js/angular/angular.js"></script>    
+  <script src="lib/onsen/js/onsenui.js"></script>    
+  
+  <script src="cordova.js"></script>  
+  <script src="js/app.js"></script>  
+  <script>
+    ons.ready(function() {
+    });
+  </script>
+</head>
+  </head>
+  <body>
+    
+    <ons-page>
+    <div class="navigation-bar">
+        <div class="navigation-bar__left">
+             <span class="icon-button--quiet navigation-bar__line-height">
+                 <i class="fa fa-angle-left"></i>&nbsp;Back
+             </span>
+        </div>
+        <div class="navigation-bar__center">
+             <span class="navigation-bar__title">Profile</span>
+        </div>
+        <div class="navigation-bar__right">
+             <span class="icon-button--quiet navigation-bar__line-height">
+             <i class="fa fa-external-link"></i>
+             </span>
+        </div>
+	</div>
+	<div class="margin-little">
+      <div class="button-bar width-full">
+        <div class="button-bar__item active">
+          <button class="button-bar__button">Home</button>
+        </div>
+        <div class="button-bar__item">
+          <button class="button-bar__button">Download</button>
+        </div>
+        <div class="button-bar__item">
+          <button class="button-bar__button">Library</button>
+        </div>
+      </div>
+    </div>
+	
+    <!--div class="margin-little">
+      <input type="search" value="" placeholder="Youtube URL" class="display-block search-input">
+	</div-->
+	
+	
+	
+	
+	<!--  MP3 code -->
+	         <div style="opacity: 100; top: 260px;" id="c2" class="converter">
+             <div class="box">
+                 <div class="title"></div>
+                 <div class="time">
+                     <div class="step_1">
+                         <img src="a_data_002/icon_002.png" alt="" class="icon"><a href=""><span class="section_1">Changez la longueur</span> <span class="section_2">(début/fin du temps) de la vidéo</span></a>
+                     </div>
+                     <div style="display: none;" class="step_2">
+                         <img src="a_data_002/_icon.png" alt="" class="icon">début: <input name="s_m" value="00" maxlength="2" class="input" type="text"> : <input name="s_s" value="00" maxlength="2" class="input" type="text"> <span class="space"></span> fin: <input name="e_m" value="00" maxlength="2" class="input" type="text"> : <input name="e_s" value="00" maxlength="2" class="input" type="text"> <a href="">Cancel</a>
+                     </div>
+                 </div>
+                 <div class="clear"></div>
+                 <form action="" method="post" class="form">
+                     <div style="display: none;" class="progress_box">
+                         <div style="width: 0px;" class="progress"></div>
+                     </div>
+					 <div class="margin-little">
+                         <!-- input style="" name="url" class="url" type="text"-->
+                         <input name="format" value="mp3" class="format" type="hidden">
+					     <input name="url" type="search" value="" placeholder="Youtube URL" class="url display-block search-input">
+					     <!-- input and button -->
+                         <input style="" value="Convert" class="button" type="submit"> 
+					 </div>
+					 <!--ons-button modifier="large">Submit</ons-button-->
+                     <a style="display: none;" href="" rel="nofollow" target="_blank" class="dl_button">Download</a>      
+                 </form>
+             </div>
+         <div class="options">
+             <div class="audio_active button ">Audio</div>
+             <div class="video_active button ">Video</div>
+             <div style="display: none;" class="wp">
+                 <input name="wp" checked="checked" class="checkbox" type="checkbox"> <span class="part_1">Download</span> <span class="part_2">with Music-Clips Download Manager</span>
+             </div>
+         </div>
+         <div class="formats">
+             <ul style="display: none;" class="audio list margin-top-adjuster">
+                 <li class="b list__item list__item--tappable"><a href="">.mp3</a></li>
+                 <li class="b list__item list__item--tappable"><a href="">.aac</a></li>
+                 <li class="b list__item list__item--tappable"><a href="">.m4a</a></li>
+                 <li class="b list__item list__item--tappable"><a href="">.ogg</a></li>
+             </ul>
+             <ul style="" class="video list margin-top-adjuster">
+                 <li class="b list__item list__item--tappable"><a href="">.mp4</a></li>
+                 <li class="b list__item list__item--tappable"><a href="">.3gp</a></li>
+                 <li class="b list__item list__item--tappable"><a href="">.avi</a></li>
+                 <li class="b list__item list__item--tappable"><a href="">.flv</a></li>
+                 <li class="b list__item list__item--tappable"><a href="">.mpg</a></li>
+             </ul>  
+         </div>
+		 <div id="frame78" width="10" height="10">
+            <iframe id="frame1" src="" width="10" height="10" marginwidth="0" 
+			        frameborder="no" scrolling="yes" >
+            </iframe>
+         </div>
+         </div><div style="display: none; top: 260px;" id="e2" class="error">
+         <div class="box">
+             <img src="a_data_002/error.png" alt="" class="error_image"><div></div>
+         </div>
+     </div></div>      
+	
+	
+	<!--  MP3 code -->
+	
+	
+	
+	
+
+    </ons-page>
+
+	<script src="a_data_002/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="a_data_002/jquery.js"></script>
+ <script type="text/javascript" src="a_data_002/style.js"></script>
+ <script type="text/javascript" src="a_data_002/fr.js"></script>
+ <script type="text/javascript" src="a_data_002/script.js"></script>
+ <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25405956-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+ </script>
+  
+    
+  </body>
+</html>
+

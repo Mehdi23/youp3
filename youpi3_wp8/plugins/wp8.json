@@ -1,0 +1,39 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "Properties/WMAppManifest.xml": {
+                "parents": {
+                    "/Deployment/App/Capabilities": [
+                        {
+                            "xml": "<Capability Name=\"ID_CAP_NETWORKING\" />",
+                            "count": 2
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"wp-package\" value=\"InAppBrowser\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "fr.smile.cordova.fileopener": {
+            "PACKAGE_NAME": "{151B89F1-A8A3-4AAE-A226-E84028E01D89}"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "{151B89F1-A8A3-4AAE-A226-E84028E01D89}"
+        }
+    },
+    "dependent_plugins": {}
+}
